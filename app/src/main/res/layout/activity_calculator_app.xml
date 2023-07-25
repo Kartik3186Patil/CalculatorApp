@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+
+    tools:context=".CalculatorApp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/expression"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="@string/calculator"
+        android:textColorHint="@color/white"
+        android:letterSpacing="0.1"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        />
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/AC"
+                style="@style/main_button"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginStart="7dp"
+                android:hint="@string/AC"
+                android:textColorHint="@color/white"
+
+                />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/backspace_icon"
+                android:scaleType="center"
+
+
+                style="@style/main_button"
+                />
+
+            <TextView
+                android:id="@+id/modulo"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/modulo"
+                android:textColorHint="@color/white"
+
+                style="@style/main_button"
+                />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/main_button"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="7dp"
+                android:hint="@string/plus"
+                android:textColorHint="@color/white"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginStart="7dp"
+
+                android:hint="@string/seven"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/eight"
+                android:textColorHint="@color/white"
+
+                style="@style/Number"
+                />
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/nine"
+                android:textColorHint="@color/white"
+
+                style="@style/Number"
+                />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/main_button"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="7dp"
+                android:hint="@string/minus"
+                android:textColorHint="@color/white"
+                />
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/four"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/four"
+                android:textColorHint="@color/white"
+                android:layout_marginStart="7dp"
+                style="@style/Number"
+                />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+
+                android:hint="@string/five"
+                android:textColorHint="@color/white"/>
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/six"
+                android:textColorHint="@color/white"
+
+                style="@style/Number"
+                />
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/multiply"
+                android:textColorHint="@color/white"
+                android:layout_marginEnd="7dp"
+                style="@style/main_button"
+                />
+
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/one"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/one"
+                android:textColorHint="@color/white"
+                android:layout_marginStart="7dp"
+                style="@style/Number"
+
+                />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+                android:hint="@string/two"
+                android:textColorHint="@color/white"
+
+                style="@style/Number"
+                />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+               android:hint="@string/three"
+                android:textColorHint="@color/white"
+
+                style="@style/Number"
+                />
+
+            <TextView
+                android:id="@+id/divide"
+                android:layout_height="72dp"
+                android:layout_width="wrap_content"
+               android:hint="@string/divide"
+                android:textColorHint="@color/white"
+                android:layout_marginEnd="7dp"
+                style="@style/main_button"
+                />
+
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/changeSign"
+                style="@style/main_button"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="40dp"
+                android:hint="@string/changeSign"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginBottom="40dp"
+                android:hint="@string/zero"
+                android:textColorHint="@color/white"/>
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/main_button"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+            android:layout_marginBottom="40dp"
+                android:hint="@string/decimal"
+                android:textColorHint="@color/white"/>
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/important_button"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="40dp"
+                android:hint="@string/equals"
+                android:textColorHint="@color/white"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:flow_verticalBias="0"
+        tools:text="12345"
+        />
+    
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="32sp"
+        android:textColor="@color/darkpurple"
+        android:textColorHint="@color/lightpurple40"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.9"
+        tools:text="12345"
+
+        />
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/copyright"
+        android:textColorHint="@color/white"
+        android:textSize="13dp"
+        android:letterSpacing="0.1"
+        android:textStyle="italic"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
